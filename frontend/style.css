@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7fb;
+    color: #24264b;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 320px;
+    background: linear-gradient(135deg, #6c63ff, #8f88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #e9e7ff;
+}
+
+/* Appointment Section */
+
+.appointment-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #24264b;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #6c63ff;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #574fe6;
+}
+
+.submit-button span {
+    margin-left: 8px;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Users Section */
+
+.users-section {
+    padding: 60px 20px;
+    background: #f0efff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.small-heading {
+    color: #6c63ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-heading > p:last-child {
+    color: #777;
+}
+
+.users-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.loading,
+.no-users {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #777;
+    padding: 30px;
+}
+
+.user-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.user-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #6c63ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-card h3 {
+    font-size: 18px;
+}
+
+.user-card p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.delete-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #c0392b;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .users-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .users-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+}

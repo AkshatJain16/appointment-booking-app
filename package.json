@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.4",
+    "sequelize": "^6.37.8"
+  },
+  "name": "full-stack-appointment-booking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
